@@ -104,7 +104,7 @@ def list_article():
         cursor.close()
         conn.close()
         return jsonify({'success':False,'message':"Some Error Occured.Please Try again later"})
-    return jsonify({'success':True,'message':title_data})
+    return jsonify({'success':True,'data':title_data})
 
 
 
